@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "pathname"
+require_relative "lib/seekmodo/sdk/version"
 
 Gem::Specification.new do |spec|
   spec.name = "seekmodo-sdk"
