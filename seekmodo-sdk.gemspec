@@ -31,8 +31,4 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "faraday", ">= 2.0"
   spec.add_dependency "jwt", ">= 2.7"
-
-  spec.add_development_dependency "rspec", "~> 3.13"
-  spec.add_development_dependency "rubocop", "~> 1.60"
-  spec.add_development_dependency "webmock", "~> 3.23"
 end

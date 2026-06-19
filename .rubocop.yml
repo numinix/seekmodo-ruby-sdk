@@ -10,9 +10,16 @@ Style/Documentation:
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
+Gemspec/DevelopmentDependencies:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 140
+
 Metrics/BlockLength:
   Exclude:
     - "spec/**/*"
+    - "seekmodo-sdk.gemspec"
 
 Metrics/MethodLength:
   Max: 30
