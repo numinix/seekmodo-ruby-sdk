@@ -13,6 +13,8 @@ def load_fixture(name)
   JSON.parse(File.read(path))
 end
 
+RecordedRequest = Struct.new(:method, :url, :request_headers, :body, keyword_init: true)
+
 class MockGateway
   attr_reader :requests
 
@@ -24,8 +26,13 @@ class MockGateway
       f.adapter :test, @stubs
     end
 
-    @stubs.post(%r{.*}) do |env|
-      @requests << env
+    handler = lambda do |env|
+      @requests << RecordedRequest.new(
+        method: env.method,
+        url: env.url,
+        request_headers: env.request_headers,
+        body: env.body
+      )
       if @responses.empty?
         [500, {}, JSON.generate({ "error" => "no mock response queued" })]
       else
@@ -34,15 +41,8 @@ class MockGateway
       end
     end
 
-    @stubs.get(%r{.*}) do |env|
-      @requests << env
-      if @responses.empty?
-        [500, {}, JSON.generate({ "error" => "no mock response queued" })]
-      else
-        status, body = @responses.shift
-        [status, {}, JSON.generate(body)]
-      end
-    end
+    @stubs.post(%r{.*}, &handler)
+    @stubs.get(%r{.*}, &handler)
   end
 
   def push_response(status, body)

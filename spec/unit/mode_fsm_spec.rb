@@ -16,7 +16,7 @@ RSpec.describe Seekmodo::Sdk::ModeFsm do
     5.times { breaker.record_failure }
 
     snapshot = Seekmodo::Sdk::TenantSnapshot.new(client, cache, clock: -> { 1000 })
-    fsm = Seekmodo::Sdk::ModeFsm.new(snapshot, breaker)
+    fsm = Seekmodo::Sdk::ModeFsm.new(snapshot, breaker: breaker)
     expect(fsm.effective_mode).to eq(Seekmodo::Sdk::Mode::OFF)
   end
 
