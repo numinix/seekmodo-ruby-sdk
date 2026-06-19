@@ -1,0 +1,14 @@
+{
+    "documents": [
+        {
+            "id": "p-101",
+            "name": "NGK Iridium IX Spark Plug",
+            "url": "/products/ngk-iridium-ix-spark-plug",
+            "price": 12.49,
+            "brand": "NGK",
+            "categories": ["Engine", "Ignition", "Spark Plugs"],
+            "in_stock": true
+        }
+    ],
+    "action": "upsert"
+}

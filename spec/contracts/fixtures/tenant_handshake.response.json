@@ -1,0 +1,14 @@
+{
+    "ok": true,
+    "tenant_id": "redline",
+    "mode": "shadow",
+    "default_mode": "off",
+    "timeout_ms": 250,
+    "index_batch": 500,
+    "callback_host_allowlist": ["redline.example.com", "*.redline.example.com"],
+    "indexer_schedule": "*/15 * * * *",
+    "auto_promote": true,
+    "fsm": {"current_state": "shadow", "last_transition_at": 1717800000},
+    "bot_check_backend": "inline",
+    "plan": {"tier": "growth", "monthly_searches_cap": 100000}
+}

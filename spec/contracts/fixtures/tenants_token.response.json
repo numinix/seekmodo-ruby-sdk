@@ -1,0 +1,6 @@
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0aWQiOiJyZWRsaW5lIiwic2NvcGUiOlsic2VhcmNoIiwic3VnZ2VzdCJdLCJpYXQiOjE3MTc4MDQ4MDAsImV4cCI6MTcxNzgwNTEwMH0.signature_placeholder",
+    "expires_at": 1717805100,
+    "issued_at": 1717804800,
+    "scope": ["search", "suggest", "recommend", "chat", "event"]
+}

@@ -1,0 +1,5 @@
+{
+    "ok": false,
+    "error": "signature_mismatch",
+    "message": "Request signature does not match the configured shared secret for tenant 'redline'."
+}

@@ -1,0 +1,23 @@
+{
+    "hits": [
+        {
+            "id": "p-101",
+            "name": "NGK Iridium IX Spark Plug",
+            "url": "/products/ngk-iridium-ix-spark-plug",
+            "price": 12.49,
+            "_text_match_score": 0.987
+        },
+        {
+            "id": "p-102",
+            "name": "Denso Iridium TT Spark Plug",
+            "url": "/products/denso-iridium-tt",
+            "price": 9.99,
+            "_text_match_score": 0.971
+        }
+    ],
+    "found": 2,
+    "page": 1,
+    "per_page": 24,
+    "took_ms": 23,
+    "bot_check": {"is_bot": false, "verdict": "human"}
+}

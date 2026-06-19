@@ -1,0 +1,5 @@
+{
+    "ok": false,
+    "error": "over_quota",
+    "message": "Tenant 'redline' has exceeded its monthly_searches_cap. Upgrade plan to continue."
+}

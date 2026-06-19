@@ -1,0 +1,29 @@
+{
+    "events": [
+        {
+            "type": "click",
+            "q": "spark plug",
+            "doc_id": "p-101",
+            "position": 1,
+            "is_bot": false,
+            "surface": "serp",
+            "ts": 1717804800
+        },
+        {
+            "type": "impression",
+            "q": "spark plug",
+            "doc_ids": ["p-101", "p-102", "p-103"],
+            "is_bot": false,
+            "surface": "serp",
+            "ts": 1717804801
+        },
+        {
+            "type": "search",
+            "q": "spark plug",
+            "hits": 47,
+            "is_bot": false,
+            "surface": "serp",
+            "ts": 1717804802
+        }
+    ]
+}

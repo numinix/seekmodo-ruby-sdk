@@ -1,0 +1,8 @@
+{
+    "q": "spark plug",
+    "page": 1,
+    "per_page": 24,
+    "query_by": "name,model,description,brand,category_breadcrumbs",
+    "filter_by": "in_stock:=true",
+    "sort_by": "_text_match:desc"
+}

@@ -1,0 +1,5 @@
+{
+    "ok": false,
+    "error": "tenant_paused",
+    "message": "Tenant 'redline' is paused. Resume in admin.seekmodo.com to start serving search again."
+}
